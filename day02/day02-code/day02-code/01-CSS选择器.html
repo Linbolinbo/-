@@ -1,0 +1,61 @@
+<!--
+ * @Description: 
+ * @Author: ZachGmy
+ * @Date: 2022-12-06 08:34:56
+ * @LastEditors: ZachGmy
+ * @LastEditTime: 2022-12-06 08:49:58
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 通配符选择器 */
+    /* 设置一些统一的字体 统一的字体颜色。。。 */
+    /* 清除掉所有标签原生自带的内外边距 */
+    *{
+      /* 外边距 */
+      margin: 0;
+      /* 内边距 */
+      padding: 0;
+      /* 设置字体大小 */
+      font-size: 24px;
+      /* 设置字体颜色 */
+      color: red;
+    }
+    /* 标签选择器 */
+    div{
+      background-color: antiquewhite;
+    }
+    /* 类选择器 */
+    .div1{
+      color: tomato;
+    }
+    /* id选择器 一般不用于设置样式 留给DOM使用的 */
+    #div2{
+      background-color: brown;
+    }
+    /* 并集选择器 */
+    .div1,.father{
+      /* 边框 */
+      border: 1px solid greenyellow;
+    }
+    /* 后代选择器 */
+    .father .son{
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="div1">我是div1</div>
+  <div id="div2">我是div2</div>
+  <!-- 父子结构 -->
+  <div class="father">
+    <div class="son">我是子元素</div>
+    <span>我是span</span>
+  </div>
+</body>
+</html>

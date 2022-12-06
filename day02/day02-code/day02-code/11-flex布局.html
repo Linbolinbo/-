@@ -1,0 +1,51 @@
+<!--
+ * @Description: 
+ * @Author: ZachGmy
+ * @Date: 2022-12-06 15:26:22
+ * @LastEditors: ZachGmy
+ * @LastEditTime: 2022-12-06 16:13:55
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .father{
+      width: 500px;
+      height: 500px;
+      border: 1px solid;
+      margin: 40px auto;
+      /* 开启flex布局 */
+      display: flex;
+      /* 修改主轴的方向 */
+      /* flex-direction: row; */
+      /* 开启换行 */
+      /* flex-wrap: wrap; */
+      /* 上面两个属性可以简写为flex-flow */
+      /* flex-flow: row nowrap; */
+      /* 主轴上元素的对齐方式 */
+      justify-content: center;
+      /* 交叉轴上元素的对齐方式 */
+      align-items: center;
+    }
+    .div1,.div2,.div3{
+      width: 100px;
+      height: 100px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="father">
+    <div class="div1" style="background-color: red;">1</div>
+    <div class="div2" style="background-color: blue;">2</div>
+    <div class="div3" style="background-color: green;">3</div>
+    <!-- <div class="div1" style="background-color: red;">4</div>
+    <div class="div2" style="background-color: blue;">5</div>
+    <div class="div3" style="background-color: green;">6</div> -->
+  </div>
+</body>
+</html>

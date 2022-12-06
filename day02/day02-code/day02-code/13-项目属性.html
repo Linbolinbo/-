@@ -1,0 +1,66 @@
+<!--
+ * @Description: 
+ * @Author: ZachGmy
+ * @Date: 2022-12-06 15:26:22
+ * @LastEditors: ZachGmy
+ * @LastEditTime: 2022-12-06 16:42:06
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .father {
+      width: 500px;
+      height: 500px;
+      border: 1px solid;
+      margin: 40px auto;
+      /* 开启flex布局 */
+      display: flex;
+    }
+
+    .div1,
+    .div2,
+    .div3 {
+      width: 100px;
+      height: 100px;
+      color: white;
+    }
+    .div1{
+      /* flex-grow: 3; */
+      flex: 2;
+    }
+    .div2{
+      /* 项目排序 */
+      /* order: 3; */
+      /* 分配剩余空间 */
+      /* flex-grow: 1; */
+      /* 缩放 */
+      /* flex-shrink: 0; */
+      /* 使用flex属性设置子元素的宽度 */
+      /* flex-basis: 120px; */
+      flex: 1;
+    }
+    .div3{
+      /* flex-grow: 4; */
+      flex: 3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="father">
+    <div class="div1" style="background-color: red;">1</div>
+    <div class="div2" style="background-color: blue;">2</div>
+    <div class="div3" style="background-color: green;">3</div>
+    <!-- <div class="div1" style="background-color: red;">4</div>
+    <div class="div2" style="background-color: blue;">5</div>
+    <div class="div3" style="background-color: green;">6</div> -->
+  </div>
+</body>
+
+</html>

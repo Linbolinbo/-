@@ -1,0 +1,47 @@
+<!--
+ * @Description: 
+ * @Author: ZachGmy
+ * @Date: 2022-12-06 10:57:54
+ * @LastEditors: ZachGmy
+ * @LastEditTime: 2022-12-06 11:09:23
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .div1{
+      border: 1px solid black;
+      /* height: 150px; */
+    }
+    /* 解决高度塌陷的最终方案 */
+    .div1::after{
+      /* 类似于我们手动的在div1里面添加了一个空白的没有内容的div */
+      content: '';
+      /* 显示模式的切换 */
+      display: block;
+      clear: both;
+    }
+    .div2{
+      background-color: red;
+      width: 150px;
+      height: 150px;
+      /* 父元素的高度 是有 子元素撑起来的  但是子元素浮动之后 父元素就是发生高度塌陷的问题 */
+      float: left;
+    }
+    /* .div3{
+      清除浮动
+      clear: both;
+    } */
+  </style>
+</head>
+<body>
+  <div class="div1">
+    <div class="div2"></div>
+    <!-- <div class="div3"></div> -->
+  </div>
+</body>
+</html>
