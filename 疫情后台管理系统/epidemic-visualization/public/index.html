@@ -1,0 +1,35 @@
+<!--
+ * @Description:
+ * @Author: ZachGmy
+ * @Date: 2020-09-03 09:57:40
+ * @LastEditors: ZachGmy
+ * @LastEditTime: 2022-11-27 22:40:21
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= webpackConfig.name %></title>
+    <!-- 引入highchat -->
+    <!-- <script src="http://cdn.highcharts.com.cn/highcharts/highcharts.js"></script> -->
+    <!-- 引入highmap -->
+    <script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+<script src="https://img.hcharts.cn/highmaps/modules/map.js"></script>
+<!-- 引入中国地图 -->
+<script src="https://data.jianshukeji.com/geochina/china.js"></script>
+<!-- 引入广西地图 -->
+<script src="https://data.jianshukeji.com/geochina/guangxi.js"></script>
+<!-- 引入高德地图api -->
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=9937e56f5186fb97ac7d4a2eb5d2e3ec"></script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= webpackConfig.name %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
